@@ -1,0 +1,76 @@
+html{
+    background: #87CEEB;
+}
+
+body{
+    font-family: Calibri, sans-serif;
+    overflow: auto;
+}
+
+.lobby-details{
+    position: absolute;
+    left: 150px;
+}
+
+#lobby-player-name{
+    top:2%;
+}
+
+.lobby-registered-players{
+    position: absolute;
+    top:4%
+}
+
+#lobby-games{
+    border: 1px solid #000000;
+    border-radius: 6px;
+}
+#lobby-games .lobby-col-title{
+    width: 10%;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+#lobby-userslist {
+    border-collapse: collapse;
+    top:10%;
+    content: "•";
+    color: green;
+    font-weight: bold;
+}
+
+#lobby-file-choicer{
+    top:20%;
+    width: 80px;
+    float: left;
+    margin-right: 4%;
+}
+
+#enter-game-button, #view-game-button{
+    left: 30%;
+    position: relative;
+}
+
+.lobby-boards-title{
+    background-color: #b0c0bd;
+}
+
+.lobby-boards-game:nth-child(even) {
+    background-color: #ffb11c;
+}
+
+.lobby-boards-game:nth-child(odd) {
+    background-color: #ffd67c;
+}
+
+#logout-Button {
+    position: absolute;
+    top:5%;
+    left: 90%;
+}
+
+#logout-Button:hover, #enter-game-button:hover, #view-game-button:hover, #upload-Game:hover{
+    background-color: rgba(215, 216, 210, 1);
+    border-color: rgba(215, 216, 210, 1);
+}

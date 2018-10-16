@@ -1,0 +1,65 @@
+html{
+    background: #87CEEB;
+}
+
+body{
+    font-family: Calibri, sans-serif;
+}
+
+#login-page-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-page-wrapper #N-in-a-Row {
+    width: 250px;
+    margin: 16px 0;
+}
+
+#login-page-wrapper #username-label {
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+#login-page-wrapper #user-type {
+    left: 100px;
+    position: fixed;
+    margin-top: 2%;
+}
+
+#login-page-wrapper #Computer-name{
+    left: 125px;
+    position: fixed;
+    margin-top: 2%;
+}
+
+#login-page-wrapper #username-input {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 1px;
+    border: 1px solid #ccc;
+}
+
+#login-page-wrapper #submit-btn{
+    left: 125px;
+    position: fixed;
+    margin-top: 5%;
+}
+
+#login-page-wrapper #submit-btn:hover {
+    background-color: rgba(215, 216, 210, 1);
+    border-color: rgba(215, 216, 210, 1);
+}
+
+#login-page-wrapper #error-name{
+    position: fixed;
+    margin-top: 25%;
+    left:20%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #eb0000;
+}

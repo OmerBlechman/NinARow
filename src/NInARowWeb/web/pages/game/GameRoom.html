@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>N In A Row</title>
+    <link rel="stylesheet" href="GameRoom.css"></head>
+    <script src="../../common/jquery-2.0.3.min.js"></script>
+    <script src="../../common/context-path-helper.js"></script>
+    <script src="GameRoom.js"></script>
+    <script src="chatroom.js"></script>
+</head>
+<body>
+    <form id = "logout-Button" action ="/NinARow/LogoutGame" method="POST">
+        <input type="submit" value = "Logout"/>
+    </form>
+    <h1 id="Waiting-message"></h1>
+    <h1 id="Player-Retired-message"></h1>
+    <h3 id = "player-session-name"></h3>
+    <div id="sidebar">
+        <div id = "Statistics">
+            <label>Target:</label>
+            <label id="Target"></label>
+            <br>
+            <label>Varient:</label>
+            <label id="Varient"></label>
+            <br>
+            <label class = "game-label">Time Elapsed:</label>
+            <label id = "Time-elapsed"></label>
+            <br>
+            <label class = "game-label">Current Player:</label>
+            <label id = "Current-name-turn"></label>
+            <br>
+            <label class = "game-label">Next Player:</label>
+            <label id="Next-Player"></label>
+        </div>
+
+        <h3 class = "title-label" id="Players-label">Players Details:</h3>
+        <div id="playersDetails">
+            <div id = 'playerDetails'>
+            </div>
+        </div>
+    </div>
+    <h3 class = "title-label" id="History-label">History</h3>
+    <div id="History">
+        <ol id = "History-List"></ol>
+    </div>
+    <h1 id = "error-move-message"></h1>
+    <div id = "board"></div>
+    <div id = "Chat">
+        <div class="container-fluid">
+            <div class="content">
+                <div id="chatwindow">
+                    <h4>Chat</h4>
+                    <div id="chatarea" class="span6"></div>
+                    <form id="chatform" method="POST" action="SendChat">
+                        <input type="text" id="userstring" name="userstring"/>
+                        <input type="submit" value="Send"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 id = "Winners-Message"></h1>
+    <h4>Viewers</h4>
+    <ul id = "viwers-userslist">
+    </ul>
+</body>
+</html>
